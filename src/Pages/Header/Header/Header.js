@@ -25,10 +25,10 @@ const Header=({dark})=>{
            <div className="header-info lg:w-full my-3 w-full lg:px-2 ">
            <h1 className={`${dark?"text-white":"text-black"} font-bold lg:text-6xl text-3xl`}>Mohammad <span className="text-blue-700"> Ibrahim</span></h1>
            <h2 className={`text-xl font-semibold ${dark?"text-white":"text-black"} lg:my-3`}>
-          I'am a  <span  className="text-balck"style={{  fontWeight: 'bold' }}>
+          I am  <span  className="text-blue-700"style={{  fontWeight: 'bold' }}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
-            words={[' Full stack Developer', ' Front-End developer', ' Web Developer']}
+            words={[' a Full stack Developer', ' a Front-End developer', ' a Web Developer']}
             loop={10}
             cursor
             cursorStyle='||'

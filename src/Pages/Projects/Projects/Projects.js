@@ -19,7 +19,7 @@ const Projects=({dark})=>{
       id:2
     },
     {
-      img:"https://www.capgemini.com/pt-en/wp-content/uploads/sites/20/2020/05/Ecommerce-1-15.jpg",
+      img:"https://i.ibb.co/Js3gqhT/Screenshot-123.png",
       title:"Ema jhon",
       details:"One kind of online Ecommerce website",
       id:3

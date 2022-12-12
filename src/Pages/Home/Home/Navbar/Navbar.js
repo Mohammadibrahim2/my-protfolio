@@ -15,7 +15,7 @@ const Navbar =({dark,setDark}) => {
 
         <div className="w-full">
             <div className={`navbar relative  ${dark?"bg-black ":"bg-white lg:drop-shadow-lg"}  text-blue-500 px-5 py-5  flex lg:flex-col flex-row justify-between lg:items-center lg:h-[100vh] h-[100px]`}>
-                <a className="btn btn-ghost normal-case text-3xl">Ibrahim</a>
+                <a className="btn btn-ghost normal-case text-4xl font-bold">Ibrahim</a>
                <div className="lg:hidden block">
                {
                 toggle?<button className="text-3xl font-semibold " onClick={()=>setToggle(false)}><HiMenuAlt3></HiMenuAlt3></button>: 
@@ -24,7 +24,7 @@ const Navbar =({dark,setDark}) => {
                }
 
                 </div>
-                <ul className=" h-full lg:flex lg:flex-col hidden   justify-between lg:items-baseline  ">
+                <ul className=" h-full lg:flex lg:flex-col hidden  text-2xl font-semiold justify-between lg:items-baseline  ">
                 {dark? <button onClick={()=>setDark(!dark)} className="text-3xl"><FiSun></FiSun></button>: <button  onClick={()=>setDark(!dark)}  className="text-3xl"><FiMoon></FiMoon> </button>}
                     <li><a href="/">Home </a></li>
                     <li><Link to="/about">About </Link></li>

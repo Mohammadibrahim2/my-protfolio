@@ -5,7 +5,7 @@ const About = ({ dark }) => {
     return (
         <div className={`${dark ? "bg-black" : "bg-gray-200 "}   h-auto `}>
             <button className={`mx-5 px-4 py-2 bg-gray-400 text-2xl text-black font-semibold`}>About</button>
-            <h2 className="text-4xl text-black font-bold p-5">
+            <h2 className="text-4xl text-black font-bold p-5 text-center">
                 Who I am ?
             </h2>
             <div className=" h-full flex flex-col justify-start items-start px-3 py-5">
