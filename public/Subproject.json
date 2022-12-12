@@ -1,0 +1,41 @@
+[
+    {
+        "id":"1",
+        "img1":"https://drive.google.com/file/d/1_eZwLyvXeGrXvPUIvE-TsGxWPv07H5bz/view",
+        "img2":"./img/Screenshot (124).png",
+        "img3":"./img/Screenshot (125).png",
+        "details1":"A digital MCQ platform for the learner",
+        "details2":"can cheak how much have learnt by participating in the MCQ part",
+        "details3":"Learners can see where they are right or wrong",
+        "details4":"For premium access,must be registered or logged in",
+        "git":"https://github.com/Mohammadibrahim2/Multiple-Choice-Quaere",
+        "livesite":"https://multiple-choice-quaere2.netlify.app/"
+    },
+    {
+        "id":"2",
+        "img1":"./img/Screenshot (127).png",
+        "img2":"./img/Screenshot (128).png",
+        "img3":"./img/Screenshot (129).png",
+        "details1":"Make math easy by this site",
+        "details2":"all your needed courses are added here for your convenience",
+        "details3":"Required courses can download or can take premium access",
+        "details4":"For premium access,must be registered or logged in",
+        "git":"https://github.com/Mohammadibrahim2/Alpha-Math",
+        "livesite":"https://glistening-chaja-bc8f94.netlify.app/"
+
+
+    },
+    {
+        "id":"3",
+        "img1":"./img/Screenshot(131).png",
+        "img2":"./img/Screenshot(132).png",
+        "img3":"./img/Screenshot(130).png",
+        "details1":"A digital MCQ platform for the learner",
+        "details2":"can cheak how much have learnt by participating in the MCQ part",
+        "details3":"Learners can see where they are right or wrong",
+        "details4":"For premium access,must be registered or logged in",
+        "git":"https://github.com/Mohammadibrahim2/Fitness",
+        "livesite":"https://lighthearted-tanuki-c641df.netlify.app/"
+
+    }
+]
