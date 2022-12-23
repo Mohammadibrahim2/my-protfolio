@@ -1,4 +1,4 @@
-import React ,{useRef}from "react";
+import React ,{useContext, useRef}from "react";
 
 import {FaMobileAlt} from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
@@ -6,9 +6,11 @@ import { HiLocationMarker } from "react-icons/hi";
 
 import emailjs from '@emailjs/browser';
 import { toast } from "react-toastify";
+import { DarkMood } from "../../../DarkMoodLightMood/DArkMoodLightMood";
 
-const ContactMe = ({dark}) => {
+const ContactMe = () => {
 
+    const {dark}=useContext(DarkMood)
     const form = useRef();
 
     const handleEmail=(event)=>{
@@ -46,7 +48,7 @@ const ContactMe = ({dark}) => {
     ]
 
     return (
-        <div className={`pb-4 w-full h-full ${dark?"bg-black":"bg-gray-200"} `}>
+        <div className={`pb-4 w-full h-full ${dark?"bg-slate-800":"bg-gray-200"} `}>
             <h1 className="text-blue-700 text-4xl font-semibold text-center py-5 relative">Contact Me</h1>
 
             {/* 1st section:- */}
@@ -69,12 +71,12 @@ const ContactMe = ({dark}) => {
 
                 </div>
                 {/* 1.2 section for email from:- */}
-                <div className={`contact-info-2  lg:ml-2 cols-span-2 w-full ${dark?"bg-black text-white":"bg-gray-200 text-black"}`}  >
+                <div className={`contact-info-2  lg:ml-2 cols-span-2 w-full ${dark?"bg-slate-800 text-white":"bg-gray-200 text-black"}`}  >
                     {/* 1.2.1 section for heading */}
                     <div><h1 className={` text-2xl font-semibold ${dark?"text-white":"text-black"} my-4 mx-3`}>How Can I Help You?</h1></div>
                       {/* 1.2.2 section for form */}
                     <div className="w-full flex flex-row justify-between ">
-                        <form  ref={form} onSubmit={handleEmail} className={`w-full ${dark?"bg-black":"bg-gray-200"} text-start `} >
+                        <form  ref={form} onSubmit={handleEmail} className={`w-full ${dark?"bg-slate-800":"bg-gray-200"} text-start `} >
                             <div className="flex flex-col mx-5">
                             <input name="name" type="text" placeholder="full Name" className="input input-bordered input-info  md:w-96 w-full bg-white" />
                             <input name="email" type="text" placeholder="Email" className="my-3 input input-bordered input-info md:w-96 w-full bg-white " />

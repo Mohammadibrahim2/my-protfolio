@@ -1,0 +1,21 @@
+ .abul{
+    position: relative;
+
+}
+ .abul::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top:110%;
+    left:0;
+ 
+    background-color:blue;
+    width: 0%;
+    height: 3px;
+    transition: all .3s ease-in-out;
+}
+.abul:hover::after{
+    width: 100%;
+
+
+}

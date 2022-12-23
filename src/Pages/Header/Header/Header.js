@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import img from"../../asssets/pf.jpg"
 
@@ -7,12 +7,18 @@ import {FaFacebookF} from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { Typewriter } from 'react-simple-typewriter'
 import "./Header.css"
+import { DarkMood } from "../../../DarkMoodLightMood/DArkMoodLightMood";
+import ColorKoro from "../../Home/Home/ColorKoro/ColorKoro";
+import { ColorChose } from "../../../DarkMood/ColorChose/ColorChose";
 
 
-const Header=({dark})=>{
+const Header=()=>{
+  const{dark}=useContext(DarkMood)
+  const {color}=useContext(ColorChose)
+  
 
     return(
-        <div className="bg-slate-100 lg:px-2">
+        <div className={`${dark?"bg-slate-800":"bg-slate-100"} lg:px-2`}>
            
 
            {/* Headerr */}
@@ -24,7 +30,7 @@ const Header=({dark})=>{
           
            <div className="header-info lg:w-full my-3 w-full lg:px-2 ">
            <h1 className={`${dark?"text-white":"text-black"} font-bold lg:text-6xl text-3xl`}>Mohammad <span className="text-blue-700"> Ibrahim</span></h1>
-           <h2 className={`text-xl font-semibold ${dark?"text-white":"text-black"} lg:my-3`}>
+           <h2 className={`text-xl font-semibold ${color ?`text-${color}`:"text-black"} lg:my-3`}>
           I am  <span  className="text-blue-700"style={{  fontWeight: 'bold' }}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
@@ -38,6 +44,7 @@ const Header=({dark})=>{
           
           />
         </span>
+       
            
            
 

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { DarkMood } from "../../../DarkMoodLightMood/DArkMoodLightMood";
 import pro1 from "../../asssets/pro-1.jpg"
 import pro2 from "../../asssets/pro-2.jpg"
 import pro3 from "../../asssets/pro-3.jpg"
-const Projects=({dark})=>{
+const Projects=()=>{
+  const{dark}=useContext(DarkMood)
 
   const projects=[
     {

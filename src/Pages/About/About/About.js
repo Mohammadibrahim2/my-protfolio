@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DarkMood } from "../../../DarkMoodLightMood/DArkMoodLightMood";
 import img from "../../asssets/pf.jpg"
 
-const About = ({ dark }) => {
+const About = () => {
+    const{dark}=useContext(DarkMood)
     return (
-        <div className={`${dark ? "bg-black" : "bg-gray-200 "}   h-auto `}>
+        <div className={`${dark ? "bg-slate-800" : "bg-gray-200 "}   h-auto `}>
             <button className={`mx-5 px-4 py-2 bg-gray-400 text-2xl text-black font-semibold`}>About</button>
             <h2 className="text-4xl text-black font-bold p-5 text-center">
                 Who I am ?
@@ -15,7 +17,7 @@ const About = ({ dark }) => {
                 <div>
                     <div className="text-black my-5">
 
-                        <h1 className="text-2xl text-black font-semibold">Assalamualikum ,I am Mohammad Ibrahim.</h1>
+                        <h1 className={`text-2xl ${dark?"text-white":"text-black"} font-semibold`}>Assalamualikum ,I am Mohammad Ibrahim.</h1>
                         <h2 className="text-xl ">Front-End Web developer</h2>
 
                     </div>
